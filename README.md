@@ -1,15 +1,15 @@
 # UBC-TGA200-Bag-Sampling
-Code to analyze bag samples run on UBC's Campbell Scientific TGA 200 for stable isotope analysis of 13C and 18O in air samples.
+Code to analyze bag samples run on UBC's Campbell Scientific TGA 200 for stable isotope analysis of 13C and 18O in CO2 of ambient air samples.
 
-The plist file needs to be edited by the user to have the following settings:
+The plist file needs to be edited by the user to fit the local paths of where data are stored. It contains file path settings to the following files or directories:
 
 ### DefaultSetupFile  
 
-File where the TANK ID connected to the five sites TGA 200 are described as they change over time.
+File in TOA5 ASCII format where the TANK ID connected to the five sites TGA 200 are described as they change over time. The attached file contains an example
 
 ### DefaultTankCalibrationFile
 
-This file contains the total CO2, d13C, and d18O values for each TANK ID.
+File in TOA5 ASCII format that contains the total CO2, d13C, and d18O values for each TANK ID in UBC's Greenhouse Gas Laboratory.
 
 ### DefaultBagSampleDirectory
 
