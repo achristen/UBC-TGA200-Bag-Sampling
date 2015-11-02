@@ -1,5 +1,8 @@
 # UBC-TGA200-Bag-Sampling
-Code to analyze bag samples run on UBC's Campbell Scientific TGA 200 for stable isotope analysis of 13C and 18O in CO2 of ambient air samples.
+
+This is code to analyze bag samples that have been processed on UBC's Campbell Scientific TGA 200 for stable isotope analysis of 13C and 18O in CO2 of ambient air samples.
+
+[See below](#run) how to run the software.
 
 ## <a name="plist"></a>Property List "tga200.plist"
 
@@ -15,11 +18,11 @@ Path to the [Tank Calibration File](#tankcalibfile) in TOA5 ASCII format that co
 
 ### DefaultBagSampleDirectory
 
-The default directory in which the bag sampling [Sequence Description File](#sequencefile) and the output reports / graphs will be stored. The user can change this when running the program.
+The default directory in which the bag sampling [Sequence Description File](#sequencefile) and the output reports / graphs will be stored. The user can select a specific Sequence Description File when running the program. The path is simply the strating pointer where the dialog will ask you to select a file.
 
 ### DefaultLoggerDataDir
 
-This is the default directory where logger data from the TGA200 is stored. The user can change this when running. the program.
+This is the default directory where your [Data Logger Files](#datalogger) from the TGA200 are stored. The user can select a particular file this when running. The path is simply the strating pointer where the dialog will ask you to select a file.
 
 ## <a name="setupfile"></a>Setup File
 
@@ -114,9 +117,16 @@ An example file is contained in this project under the name "TOA5_TGA200_Example
                 "20140505-02","UBC-06",2014,05,05,20,15,00,"diluted sample from gasoline Ford Ranger 451 ppm Replicate 1/2"  
                 "20140505-03","UBC-11",2014,05,05,20,18,00,"Diluted sample from gasoline vehicle mazda 3 408 ppm Replicate 1/2"
 
-## Running the code
+## <a name="datalogger"></a> Data Logger Raw File
 
-1. Ensure the [Setup File](#setupfile) and the [Tank Calibration File](#tankcalibfile) are up to date
-2. Ensure the local path to the [Setup File](#setupfile) and the [Tank Calibration File](#tankcalibfile) is entered properly in the [tga200.plist](#plist) file.
+The high-frequency raw data are locally stored on the TGA PC under D:\met-data\tga200\ in the file CR3000_RawData.dat need to be copied after each run. This file contains the data measured by the TGA at 10 Hz resolution. The files can be quite large. They are stored in standard TOA5 file format.
 
-The high-frequency raw data are locally stored on the TGA PC under D:\met-data\tga200\ in the file CR3000_RawData.dat
+## <a name="run"></a>Running the code
+
+1. Prepare and save a [Sequence Description File](#sequencefile) for the new sequence you have run.
+2. Ensure the [Setup File](#setupfile) and the [Tank Calibration File](#tankcalibfile) are up to date
+3. Ensure the local path to the [Setup File](#setupfile) and the [Tank Calibration File](#tankcalibfile) is entered properly in the [tga200.plist](#plist) file.
+4. Ensure that [tga200.plist](#plist) file is the same directory as tga200_bag_samples.sav
+5. Run the IDL virtual machine and select tga200_bag_samples.sav. 
+6. The program will first asked to load a [Sequence Description File](#sequencefile) (Dialog asks for "Select your Sequence Description File"). Select the [Sequence Description File](#sequencefile) you have created for the run.
+7. Next, the program will ask for the [Data Logger File](#datalogger) that contains the data from your run (Dialog asks for 'Select the Data Logger Raw File of your bag sampler run'). Select the corresponding "CR3000_RawData.dat" copied after the end of your bag sampling.
