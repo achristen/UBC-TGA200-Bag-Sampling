@@ -1,0 +1,14 @@
+"TOA5","CALIBRATION-TANKS-CONNECTED-TO-TGA200,"UBC","LAST-UPDATED-2013-04-25","N/A","N/A","N/A","N/A"
+"START_YEAR","START_MONTH","START_DAY","START_HOUR","START_MINUTE","END_YEAR","END_MONTH","END_DAY","END_HOUR","END_MINUTE","TANK_SITE1","TANK_SITE2","TANK_SITE3","TANK_SITE4","TANK_SITE5","BRACKET_LOW","BRACKET_MED",""BRACKET_HIGH"
+"year","month","day","hour","minute","year","month","day","hour","minute","text","text","text","text","text","site","site","site"
+"Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp"
+2012,05,15,00,00,2012,06,05,18,00,"Outdoor","Indoor","NOAA-1","CO2-002","CO2-001",3,4,5
+2012,06,05,18,00,2012,08,01,00,00,"Outdoor","Indoor","N2-002","CO2-002","CO2-001",4,5,3
+2012,10,31,00,00,2012,11,15,18,00,"Outdoor","Indoor","NOAA-1","CO2-002","CO2-001",3,4,5
+2012,11,15,28,00,2013,01,18,20,00,"Outdoor","Indoor","N2-002","CO2-002","CO2-001",4,5,3
+2013,01,18,20,00,2013,04,18,20,00,"Outdoor","Indoor","N2-002","CO2-002","CO2-004",4,5,3
+2013,04,18,20,00,2013,04,26,19,30,"Outdoor","Indoor","N2-002","CO2-003","CO2-004",4,5,3
+2013,04,26,21,00,2013,10,09,18,30,"Outdoor","Indoor","CO2-005","CO2-003","CO2-004",4,5,3
+2013,10,09,19,00,2013,10,24,17,30,"Outdoor","Indoor","CO2-007","CO2-006","CO2-008",4,3,5
+2013,10,24,17,30,2013,10,24,24,00,"Outdoor","Indoor","NOAA-1","CO2-006","NOAA-2",3,4,5
+2013,10,25,00,00,2014,01,14,20,10,"Outdoor","Indoor","CO2-007","CO2-006","CO2-008",3,5,52014,01,14,20,10,2014,05,02,23,00,"Outdoor","Indoor","CO2-009","CO2-010","CO2-011",4,3,52014,05,02,23,00,2014,08,02,00,20,”Outdoor","Indoor","CO2-012","CO2-010","CO2-011",3,4,52014,08,02,00,20,2014,09,12,14,40,”Outdoor","Indoor","CO2-012","CO2-010","CO2-014",3,4,52014,09,12,14,40,2014,10,03,23,44,”Outdoor","Indoor","CO2-012","CO2-013","CO2-014",3,4,52014,10,03,23,44,2014,10,06,20,00,"Outdoor","Outdoor2cm","CO2-012","CO2-014","CO2-013",3,5,42014,10,06,20,00,2014,10,27,17,30,"Outdoor","Outdoor2cm","CO2-014","CO2-012","CO2-013",5,4,32014,10,27,17,30,2015,07,01,00,00,"Outdoor","Outdoor2cm","CO2-014","CO2-013","CO2-012",5,4,32015,07,01,00,00,2016,12,31,00,00,"Outdoor","Outdoor2cm","CO2-015","CO2-013","CO2-014",3,4,5 
