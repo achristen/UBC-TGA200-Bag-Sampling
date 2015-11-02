@@ -25,7 +25,7 @@ This is the default directory where logger data from the TGA200 is stored. The u
 
 This is a file that fulfills the TOA5 format as specified by Campbell Scientific. It is a comma separated file. It has 4 header rows, where rows 2-4 are column headers that indicate column headers (row 2), column units (row 3) and a generic "Smp" for all entries in row 4.
 
-Each row is a calibration tank, that is identified by a unique ID.
+Each row is a calibration tank, that is identified by a unique ID (column 1), followed by total CO2 mixing ratio (column 2), d13C in CO2 (column 3), d18O in CO2 (column 4) and a note on the calibration of the tank / source (column 5). 
 
     "TOA5","CALIBRATION-TANKS-USED-WITH-TGA200,"UBC","LAST-UPDATED-2015-11-02","N/A","N/A","N/A","N/A"
     "TANK_ID","TOTAL_CO2","D13C","D18O","NOTES"
@@ -33,6 +33,6 @@ Each row is a calibration tank, that is identified by a unique ID.
     "Smp","Smp","Smp","Smp","Smp"
     "CO2-001",503.767,-15.024, -8.349,"TGA UBC (2014-01-14 / 2014-05-02)"
     "CO2-002",447.965,-11.724, -4.947,"TGA UBC (2013-04-24 / 2013-06-11 / 2013-07-10)"
-    "CO2-003",397.762,-10.525, -4.546,"TGA UBC (2013-04-22 / 2013-06-11)"
-    "CO2-004",499.283,-37.104,-15.601,"TGA UBC (2013-04-22 / 2013-04-24 / 2013-06-11)"
-    "CO2-005",357.150,-46.564,-38.939,"TGA UBC (2013-04-24)"
+    ...
+
+Usually the latest sheet of tank analysis can be found under http://ibis.geog.ubc.ca/~achristn/tga200/calibration-tanks/
