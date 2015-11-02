@@ -23,7 +23,21 @@ This is the default directory where logger data from the TGA200 is stored. The u
 
 ## <a name="setupfile"></a>Setup File
 
-This is a file that fulfills the TOA5 format as specified by Campbell Scientific. It is a comma separated file. It has 4 header rows, where rows 2-4 are column headers that indicate column headers (row 2), column units (row 3) and a generic "Smp" for all entries in row 4. Following on lines 5 - ... are then data entries, where each entry corresponds to a time period during which the described setup of the TGA was operated. The first date contains year (column 1), month (column 2), day (column 3), hour (column 4) and minute (column 5) for the first date/time on which the current configuration of tanks was operated. The second date with year (column 6), month (column 7), day (column 8), hour (column 9) and minute (column 10) is the last date/time for which the current configuration of tanks was valid. "TANK_SITE1" (column 11), "TANK_SITE2" (column 12), "TANK_SITE3" (column 13), "TANK_SITE4" (column 14) and "TANK_SITE5" (column 15) descrive what was connected to to site 1 to site 5 of the TGA. In regular operation, site 1 is the EC inlet, site 2 is the storage inlet, and sites 3 to 5 are calibration tanks. This order, however can be different in different projects. Then "BRACKET_LOW" (column 16),"BRACKET_MED" (column 17),""BRACKET_HIGH" (column 18) are the calibration tank IDs as specified in the separate [Tank Calibration File](#tankcalibfile). The IDs must match those. For the purpose of the bag calibration, #only BRACKET_LOW and BRACKET_HIGH are used*. BRACKET_MED is usually the bag sample. However, as those files are also used for the regular operation of the TGA in EC mode, BRACKET_MED is included, but not used.
+The Setup File contains information which sampling sites (inlets) of the TGA 200 system were connected to which calibration tanks. This configuration will change over time as tanks are emptied and new ones are connected.
+
+### File format
+
+The Setup File is a file that fulfills the TOA5 format as specified by Campbell Scientific. It is a regular ASCII comma separated file with 4 header lines.
+
+### Header lines
+
+The Setup File has 4 header rows, where rows 2-4 are column headers that indicate column headers (row 2), column units (row 3) and a generic "Smp" for all entries in row 4. Following on lines 5 - ... are then data entries.
+
+### Data entries
+
+On line 5 onwards each row corresponds to a time period during which the described setup of the TGA was operated. The first date contains year (column 1), month (column 2), day (column 3), hour (column 4) and minute (column 5) for the first date/time on which the current configuration of tanks was operated. The second date with year (column 6), month (column 7), day (column 8), hour (column 9) and minute (column 10) is the last date/time for which the current configuration of tanks was valid. "TANK_SITE1" (column 11), "TANK_SITE2" (column 12), "TANK_SITE3" (column 13), "TANK_SITE4" (column 14) and "TANK_SITE5" (column 15) descrive what was connected to to site 1 to site 5 of the TGA. In regular operation, site 1 is the EC inlet, site 2 is the storage inlet, and sites 3 to 5 are calibration tanks. This order, however can be different in different projects. Then "BRACKET_LOW" (column 16),"BRACKET_MED" (column 17),""BRACKET_HIGH" (column 18) are the calibration tank IDs as specified in the separate [Tank Calibration File](#tankcalibfile). The IDs must match those. For the purpose of the bag calibration, #only BRACKET_LOW and BRACKET_HIGH are used*. BRACKET_MED is usually the bag sample. However, as those files are also used for the regular operation of the TGA in EC mode, BRACKET_MED is included, but not used.
+
+### Example file
 
 An example file is contained in this project under the name "TOA5_TGA200_Setup.txt". Here is the header and a few sample lines:
 
@@ -39,7 +53,19 @@ An example file is contained in this project under the name "TOA5_TGA200_Setup.t
 
 ## <a name="tankcalibfile"></a> Tank Calibration File
 
-This is a file that fulfills the TOA5 format as specified by Campbell Scientific. It is a comma separated file. It has 4 header rows, where rows 2-4 are column headers that indicate column headers (row 2), column units (row 3) and a generic "Smp" for all entries in row 4. Following on lines 5 - ... are then data entries. Each row is a calibration tank, that is identified by a unique ID (column 1), followed by total CO2 mixing ratio (column 2), d13C in CO2 (column 3), d18O in CO2 (column 4) and a note on the calibration of the tank / source (column 5). 
+### File format
+
+The Setup File is a file that fulfills the TOA5 format as specified by Campbell Scientific. It is a regular ASCII comma separated file with 4 header lines.
+
+### Header lines
+
+The Setup File has 4 header rows, where rows 2-4 are column headers that indicate column headers (row 2), column units (row 3) and a generic "Smp" for all entries in row 4. Following on lines 5 - ... are then data entries.
+
+### Data entries
+
+From line 5 onwards we have a list of all calibration tanks. Each row is a calibration tank, that is identified by a unique ID (column 1), followed by total CO2 mixing ratio (column 2), d13C in CO2 (column 3), d18O in CO2 (column 4) and a note on the calibration of the tank / source (column 5). 
+
+### Example file
 
 An example file is contained in this project under the name "TOA5_TGA200_Calibration_Gases.txt". Here is the header and to first entires for tanks with the IDs "CO2-001" and "CO2-002":
 
