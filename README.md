@@ -36,3 +36,5 @@ Each row is a calibration tank, that is identified by a unique ID (column 1), fo
     ...
 
 Usually the latest sheet of tank analysis can be found under http://ibis.geog.ubc.ca/~achristn/tga200/calibration-tanks/
+
+The high-frequency raw data are locally stored on the TGA PC under D:\met-data\tga200\ in the file CR3000_RawData.dat
