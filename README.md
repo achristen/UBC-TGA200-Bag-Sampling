@@ -15,21 +15,9 @@ This Property list is an ASCII file following the [.plist conventions](https://e
 3. DefaultBagSampleDirectory: The directory where [Sequence Description File](#sequencefile) are stored
 4. DefaultLoggerDataDir: The directory where the  [Data Logger Files](#datalogger) are stored.
 
-### DefaultSetupFile  
+While the [Setup File](#setupfile) and the [Tank Calibration File](#tankcalibfile) are global files that are valid for the entire system, in each run the user selected a different [Sequence Description File](#sequencefile) and a corresponding (different) [Data Logger Files](#datalogger). DefaultBagSampleDirectory and DefaultLoggerDataDir are simply the strating pointer where the appering dialog will ask you to select a file. The user is selecting the [Sequence Description File](#sequencefile) and the [Data Logger Files](#datalogger) every time the code is run.
 
-Path to the [Setup File](#setupfile) in TOA5 ASCII format where the configuration of the tanks connected to the TGA 200 at a given time are described. 
-
-### DefaultTankCalibrationFile
-
-Path to the [Tank Calibration File](#tankcalibfile) in TOA5 ASCII format that contains each Tank ID, total CO2, d13C, and d18O values for all tanks ever connected to the TGA 200. 
-
-### DefaultBagSampleDirectory
-
-The default directory in which the bag sampling [Sequence Description File](#sequencefile) and the output reports / graphs will be stored. The user can select a specific Sequence Description File when running the program. The path is simply the strating pointer where the dialog will ask you to select a file.
-
-### DefaultLoggerDataDir
-
-This is the default directory where your [Data Logger Files](#datalogger) from the TGA200 are stored. The user can select a particular file this when running. The path is simply the strating pointer where the dialog will ask you to select a file.
+The file format of all four files is described here in more detail:
 
 ## <a name="setupfile"></a>Setup File
 
