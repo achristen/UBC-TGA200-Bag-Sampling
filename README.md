@@ -8,15 +8,20 @@ This purpose of this code is to automatically analyze bag samples that have been
 
 ## <a name="plist"></a>Property List "tga200.plist"
 
-This Property list is an ASCII file following the [.plist conventions](https://en.wikipedia.org/wiki/Property_list) needs to be edited by the user to fit the local or server paths of where data are stored. It contains file path settings to the following other files or directories:
+This Property list is an ASCII file following the [.plist conventions](https://en.wikipedia.org/wiki/Property_list). If the code is moved to a different computer, this file needs to be edited by the user to fit  local or server paths of where data and settings are stored. It contains the file paths to the following four files or directories: 
+
+1. DefaultSetupFile: The latest [Setup File](#setupfile) of the system
+2. DefaultTankCalibrationFile: The latest [Tank Calibration File](#tankcalibfile) of the system.
+3. DefaultBagSampleDirectory: The directory where [Sequence Description File](#sequencefile) are stored
+4. DefaultLoggerDataDir: The directory where the  [Data Logger Files](#datalogger) are stored.
 
 ### DefaultSetupFile  
 
-Path to the [Setup File](#setupfile) in TOA5 ASCII format where the TANK ID connected to the five sites TGA 200 are described as they change over time. 
+Path to the [Setup File](#setupfile) in TOA5 ASCII format where the configuration of the tanks connected to the TGA 200 at a given time are described. 
 
 ### DefaultTankCalibrationFile
 
-Path to the [Tank Calibration File](#tankcalibfile) in TOA5 ASCII format that contains the total CO2, d13C, and d18O values for each TANK ID in UBC's Greenhouse Gas Laboratory. 
+Path to the [Tank Calibration File](#tankcalibfile) in TOA5 ASCII format that contains each Tank ID, total CO2, d13C, and d18O values for all tanks ever connected to the TGA 200. 
 
 ### DefaultBagSampleDirectory
 
