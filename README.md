@@ -116,6 +116,17 @@ An example file is contained in this project under the name "TOA5_TGA200_Example
 
 The high-frequency raw data are locally stored on the TGA PC under D:\met-data\tga200\ in the file CR3000_RawData.dat need to be copied after each run. This file contains the data measured by the TGA at 10 Hz resolution. The files can be quite large. They are stored in standard TOA5 file format.
 
+An example file is contained in this project under the name "CR3000_RawData.dat". The format is as follows. Only the columns "TIMESTAMP", "Conc12CO2","Conc13CO2","Conc18O","InletPress","ManifoldPress","DryerPress" and "TGApressure" are used.
+
+                "TOA5","CR3000","CR3000","1600","CR3000.Std.24","CPU:TGA_BAG_MODE_20151005.CR3","41452","RawData"
+                "TIMESTAMP","RECORD","Site","SiteCount","Conc12CO2","Conc13CO2","Conc18O","TGAStatus","InletPress","ManifoldPress","DryerPress","TGApressure","InletP_DutyCycle","DryerP_DutyCycle","TGAP_DutyCycle","SampleFlow","StartSeqFlag","SeqActiveFlag","Ux","Uy","Uz","Ts","diag_csat","co2","h2o","press_irga","diag_irga"
+                "TS","RN","","","ppmv","ppmv","ppmv","arb","mb","mb","mb","mb","arb","arb","arb","ml_min","","","m/s","m/s","m/s","C","unitless","mmol/m^3","mmol/m^3","kPa","unitless"
+                "","","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp","Smp"
+                "2015-10-15 21:39:00.6",8560868,3,266,381.475,4.104553,1.5602,0,818.8248,405.1235,399.9824,16.00371,1,0.3304138,0.6285757,0.2561936,0,-1,"NAN","NAN","NAN","NAN","NAN","NAN","NAN","NAN","NAN"
+                "2015-10-15 21:39:00.7",8560869,3,267,381.9843,4.103316,1.559451,0,818.121,404.9713,399.9443,15.99429,1,0.3304286,0.6285466,0.2504437,0,-1,"NAN","NAN","NAN","NAN","NAN","NAN","NAN","NAN","NAN"
+                "2015-10-15 21:39:00.8",8560870,3,268,381.7032,4.100861,1.563485,0,817.7787,404.9713,400.0014,15.99212,1,0.3304644,0.6288406,0.2476181,0,-1,"NAN","NAN","NAN","NAN","NAN","NAN","NAN","NAN","NAN"
+
+
 ## <a name="run"></a>Running the code
 
 1. Prepare and save a [Sequence Description File](#sequencefile) for the new sequence you have run.
