@@ -1,6 +1,6 @@
 # UBC-TGA200-Bag-Sampling
 
-This purpose of this code is to automatically analyze bag samples that have been processed through UBC's Campbell Scientific TGA 200 TDLAS system for stable isotope analysis of 13C and 18O in CO2. It is used to process TEDLAR bag samples of ambient air and from particular sources around ambient mixing ratios. The system is continually referenced against [UBC internal standard tanks](#http://ibis.geog.ubc.ca/~achristn/tga200/calibration-tanks/) which themselves are calibrated against NOAA-ESRL and UoC-INSTAAR isotopic standards at [398.2 ppm](#http://ibis.geog.ubc.ca/~achristn/tga200/calibration-tanks/NOAA-1/) and [467.6 ppm](#http://ibis.geog.ubc.ca/~achristn/tga200/calibration-tanks/NOAA-2/).
+This purpose of this code is to automatically analyze bag samples that have been processed through UBC's Campbell Scientific TGA 200 TDLAS system for stable isotope analysis of 13C and 18O in carbon dioxide. It is used to process TEDLAR bag samples of ambient air and from particular sources around ambient mixing ratios. The system is continually referenced against [UBC internal standard tanks](http://ibis.geog.ubc.ca/~achristn/tga200/calibration-tanks/) which themselves are calibrated against NOAA-ESRL and UoC-INSTAAR isotopic standards at [398.2 ppm](http://ibis.geog.ubc.ca/~achristn/tga200/calibration-tanks/NOAA-1/) and [467.6 ppm](http://ibis.geog.ubc.ca/~achristn/tga200/calibration-tanks/NOAA-2/).
 
 ![UBC TGA 200](image_tga200.jpg)
 
