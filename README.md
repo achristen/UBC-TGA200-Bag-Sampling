@@ -1,10 +1,10 @@
 # UBC-TGA200-Bag-Sampling
 
-This is code to analyze bag samples that have been processed on UBC's Campbell Scientific TGA 200 for stable isotope analysis of 13C and 18O in CO2 of ambient air samples.
+This purpose of this code is to automatically analyze bag samples that have been processed through UBC's Campbell Scientific TGA 200 TDLAS system for stable isotope analysis of 13C and 18O in CO2. It is used to process TEDLAR bag samples of ambient air and from particular sources around ambient mixing ratios. The system is calibrated against NOAA-CDML and UoC-INSTAAR isotopic standards.
 
 ![UBC TGA 200](image_tga200.jpg)
 
-[See below](#run) how to run the software.
+[See below](#run) how to run the software. This section describes first the essential files needed to describe the system.
 
 ## <a name="plist"></a>Property List "tga200.plist"
 
