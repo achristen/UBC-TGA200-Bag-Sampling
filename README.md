@@ -2,6 +2,8 @@
 
 This is code to analyze bag samples that have been processed on UBC's Campbell Scientific TGA 200 for stable isotope analysis of 13C and 18O in CO2 of ambient air samples.
 
+![UBC TGA 200](image_tga200.jpg)
+
 [See below](#run) how to run the software.
 
 ## <a name="plist"></a>Property List "tga200.plist"
